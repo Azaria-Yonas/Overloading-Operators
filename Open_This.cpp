@@ -41,6 +41,10 @@ public:
         Vector vector3(Xcoordinate + vector2.Xcoordinate, Ycoordinate + vector2.Ycoordinate);
         return vector3;
     }
+    Vector operator- (Vector &vector2){
+        Vector vector3(Xcoordinate - vector2.Xcoordinate, Ycoordinate - vector2.Ycoordinate);
+        return vector3;
+    }
 
 
 
@@ -57,24 +61,26 @@ int main(){
     cout << "Vector 2 = ";
     vector2.getCoordinates();
 
-    cout << "Vector 3 = Vector 1 + Vector2 = "; 
+    cout << "Vector 3 = Vector 1 + Vector 2 = "; 
     Vector vector3 = vector1 + vector2;
     vector3.getCoordinates();
+    Vector vector4 = vector1 + vector2;
+    cout << "Vector 4 = Vector 2 - Vector 1 = ";
 
     cout << endl;
 
-    Vector vector4(13,14);
-    Vector vector5(12,15);
+    Vector vector5(13,14);
+    Vector vector6(12,15);
 
-    cout << "Vector 4 = ";
-    vector4.getCoordinates();
     cout << "Vector 5 = ";
     vector5.getCoordinates();
+    cout << "Vector 6 = ";
+    vector6.getCoordinates();
 
 
-    if (vector4 > vector5){ cout << "Vector 4 is greater than Vector 5" << endl;}
-    else if (vector4 < vector5){ cout << "Vector 5 is greater than Vector 4" << endl;}
-    else {cout << "Vector 4 is equal to Vector 5" << endl;}
+    if (vector5 > vector6){ cout << "Vector 5 is greater than Vector 6" << endl;}
+    else if (vector5 < vector6){ cout << "Vector 6 is greater than Vector 5" << endl;}
+    else {cout << "Vector 5 is equal to Vector 6" << endl;}
     
 
 }

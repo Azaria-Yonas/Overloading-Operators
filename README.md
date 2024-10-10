@@ -11,7 +11,11 @@ Before proceeding, make sure you are familiar with classes, constructors, pointe
 ## Features
 
 - **Relational Operators**
-  - Basic operations: Greator-than, Less-than, and Equal-to.
+  - Greator-than
+  - Less-than
+  - Equal-to.
+
+
 
 
 - **Arithmetic Operators**

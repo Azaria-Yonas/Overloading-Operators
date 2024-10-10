@@ -13,7 +13,7 @@ Before proceeding, make sure you are familiar with classes, constructors, pointe
 - **Relational Operators**
   - Greator-than
   - Less-than
-  - Equal-to.
+  - Equal-to
 
 
 

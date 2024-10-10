@@ -64,8 +64,11 @@ int main(){
     cout << "Vector 3 = Vector 1 + Vector 2 = "; 
     Vector vector3 = vector1 + vector2;
     vector3.getCoordinates();
-    Vector vector4 = vector1 + vector2;
+
+    Vector vector4 = vector2 - vector1;
     cout << "Vector 4 = Vector 2 - Vector 1 = ";
+    vector4.getCoordinates();
+
 
     cout << endl;
 
